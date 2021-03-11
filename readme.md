@@ -34,6 +34,8 @@ Here's how it looks displaying this text:
 ```
  123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789
                                                                  80 characters ^                        120 characters ^
+
+Made by [Tomas Hubelbauer](https://github.com/tomashubelbauer)
 ```
 
 ![](screenshot.png)
