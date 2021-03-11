@@ -1,10 +1,11 @@
 # GitHub 80 Characters
 
-To make the GitHub code editor display an 80 character line cutoff, use this stylesheet:
+To make the GitHub code editor display an 80 and 120 character cutoff areas, use
+this stylesheet:
 
 ```css
 .CodeMirror-lines {
-  background: linear-gradient(to right, transparent, transparent 80ch, silver 80ch, silver);
+  background: linear-gradient(to right, transparent, transparent 80ch, whitesmoke 80ch, whitesmoke 120ch, gainsboro 120ch) !important;
 }
 ```
 
