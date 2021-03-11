@@ -5,7 +5,27 @@ this stylesheet:
 
 ```css
 .CodeMirror-lines {
-  background: linear-gradient(to right, transparent, transparent 80ch, whitesmoke 80ch, whitesmoke 120ch, gainsboro 120ch) !important;
+  background: linear-gradient(
+    to right,
+
+    transparent,
+    transparent 80ch,
+      
+    /* Render a line at 80 characters */
+    silver calc(80ch + 1px),
+    transparent calc(80ch + 1px),
+
+    transparent 120ch,
+    
+    /* Render a line at 120 characters */
+    silver calc(120ch + 1px),
+    transparent calc(120ch + 1px),
+    
+    transparent
+  )
+
+  /* Override GitHub's own stylesheet */
+  !important;
 }
 ```
 
