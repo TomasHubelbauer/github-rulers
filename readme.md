@@ -9,6 +9,8 @@ this stylesheet:
 }
 ```
 
+![](screenshot.png)
+
 ## To-Do
 
 ### Make a browser extensions for this
