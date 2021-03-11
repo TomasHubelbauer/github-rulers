@@ -5,21 +5,25 @@ this stylesheet:
 
 ```css
 .CodeMirror-lines {
+  /* Adjust by half a character to account for GitHub spacing */
+  --80: 80.5ch;
+  --120: 120.5ch;
+  --color: silver;
+
   background: linear-gradient(
     to right,
 
     transparent,
-    transparent 80ch,
-      
-    /* Render a line at 80 characters */
-    silver calc(80ch + 1px),
-    transparent calc(80ch + 1px),
 
-    transparent 120ch,
-    
+    /* Render a line at 80 characters */
+    transparent var(--80),
+    var(--color) calc(var(--80) + 1px),
+    transparent var(--80),
+
     /* Render a line at 120 characters */
-    silver calc(120ch + 1px),
-    transparent calc(120ch + 1px),
+    transparent var(--120),
+    var(--color) calc(var(--120) + 1px),
+    transparent var(--120),
     
     transparent
   )
