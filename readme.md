@@ -29,6 +29,13 @@ this stylesheet:
 }
 ```
 
+Here's how it looks displaying this text:
+
+```
+ 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789
+                                                                 80 characters ^                        120 characters ^
+```
+
 ![](screenshot.png)
 
 ## To-Do
