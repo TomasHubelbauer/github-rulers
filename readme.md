@@ -18,12 +18,12 @@ this stylesheet:
     /* Render a line at 80 characters */
     transparent var(--80),
     var(--color) calc(var(--80) + 1px),
-    transparent var(--80),
+    transparent 0,
 
     /* Render a line at 120 characters */
     transparent var(--120),
     var(--color) calc(var(--120) + 1px),
-    transparent var(--120),
+    transparent 0,
     
     transparent
   )
