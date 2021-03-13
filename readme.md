@@ -44,19 +44,20 @@ Made by [Tomas Hubelbauer](https://github.com/tomashubelbauer)
 
 ![](screenshot.png)
 
+You can use the [Stylus](https://github.com/openstyles/stylus) extension to use
+a custom stylesheet on a page. Unfortunately, browsers nowadays no longer really
+support user stylesheets:
+
+- Chrome/Edge: https://src.chromium.org/viewvc/chrome?revision=234007&view=revision
+- Firefox: https://superuser.com/a/319322/490452
+
 ## To-Do
 
-### Make a browser extensions for this
+### Figure out the extension manifest permissions for GitHub URLs
 
-Chrome and Edge no longer support user styles:
-https://src.chromium.org/viewvc/chrome?revision=234007&view=revision
+It seems I don't want a `content_script` but rather something like a background
+script so that I have access to the extension APIs not the document context?
 
-Firefox does support it with a config change:
-https://superuser.com/a/319322/490452
-
-There is an open source extension for this which looks good:
-https://github.com/openstyles/stylus
-
-But it would be much better to build my own (no risk of selling out):
+### Port the extension so it is compatible with Chrome as well
 
 https://developer.chrome.com/docs/extensions/reference/tabs/#method-insertCSS

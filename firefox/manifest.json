@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub 80/120 Characters",
+  "version": "1.0",
+  "description": "Displays a 80 and 120 character stop in the GitHub web editor",
+  "icons": {
+    "48": "icon-48.png",
+    "96": "icon-96.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.github.com/*"
+      ],
+      "js": [
+        "index.js"
+      ]
+    }
+  ]
+}

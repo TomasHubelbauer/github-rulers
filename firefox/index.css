@@ -1,0 +1,27 @@
+.CodeMirror-lines {
+  /* Adjust by half a character to account for GitHub spacing */
+  --80: 80.5ch;
+  --120: 120.5ch;
+  --color: silver;
+
+  background: linear-gradient(
+    to right,
+
+    transparent,
+
+    /* Render a line at 80 characters */
+    transparent var(--80),
+    var(--color) calc(var(--80) + 1px),
+    transparent 0,
+
+    /* Render a line at 120 characters */
+    transparent var(--120),
+    var(--color) calc(var(--120) + 1px),
+    transparent 0,
+    
+    transparent
+  )
+
+  /* Override GitHub's own stylesheet */
+  !important;
+}
