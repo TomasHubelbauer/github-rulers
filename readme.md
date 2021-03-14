@@ -81,5 +81,3 @@ https://developer.chrome.com/docs/webstore/publish
 https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/publish-extension
 
 ### Run the Puppeteer script in GitHub Actions and push `screenshot.png` from it
-
-### Fix or workaround GitHub not updating the `screenshot.png` image on push
