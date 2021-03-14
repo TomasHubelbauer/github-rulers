@@ -5,14 +5,9 @@ the stylesheet in [`background.css`](background.css).
 
 ![](screenshot.png)
 
-This is what displaying the following text in the GitHub editor looks like:
-
 ```
  123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789
                                                                  80 characters ^                        120 characters ^
-
-Made by [Tomas Hubelbauer](https://github.com/tomashubelbauer)
-
 ```
 
 ## Installation & Usage
