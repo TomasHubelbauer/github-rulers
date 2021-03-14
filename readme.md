@@ -18,7 +18,8 @@ Made by [Tomas Hubelbauer](https://github.com/tomashubelbauer)
 ## Installation & Usage
 
 You can use the [Stylus](https://github.com/openstyles/stylus) extension to use
-the stylesheet.
+the stylesheet. I am building my own extension, but it is still in development.
+To use it, see [Browser Extension](#browser-extension).
 
 See about [User Stylesheet Support In Browsers](#user-stylesheets-in-browsers)
 for why to use the extension.
