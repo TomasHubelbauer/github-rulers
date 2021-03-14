@@ -56,3 +56,7 @@ https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_firs
 ### Figure out how to test, fix if needed and publish the extension for Chrome
 
 Maybe the path to `index.css` will need to be adjusted.
+
+### Set up Puppeteer to test and screenshot the extension in GitHub Actions
+
+https://github.com/puppeteer/puppeteer/issues/1286
