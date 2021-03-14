@@ -1,7 +1,7 @@
 # GitHub 80/120 Characters
 
 To make the GitHub code editor display an 80 and 120 character cutoff lines, use
-the stylesheet in [`index.css`](index.css).
+the stylesheet in [`background.css`](background.css).
 
 ![](screenshot.png)
 
@@ -45,18 +45,39 @@ The extension will support Firefox and Chrome.
 - Click **Reload** after making changes
 - Click **Inspect** to view the extension console
 
+### Chrome
+
+The Chrome extension is being developed and tested using Puppeteer.
+
+```
+npm install
+node . $password
+```
+
+`$password` is a password to the collaborator `github-80-120@hubelbauer.net`
+GitHub account with access to the repository. This is needed so the account can
+enter the edit mode of the `readme.md` MarkDown document.
+
+To use Chrome directly and not through Puppeteer:
+
+- Go to chrome://extensions
+- Switch **Developer mode** on
+- Click **Load unpacked** and select this repository directory
+- Click the reload icon after making changes
+- Click **Details** > `background page` to view the extension console
+
 ## To-Do
 
-### Create and use icons for the web extension
+### Publish the extension for Firefox
 
-### Publish and package the extension for Firefox
+https://extensionworkshop.com/documentation/publish/submitting-an-add-on
 
-https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension#packaging_and_publishing
+### Publish the extension for Chrome and Edge
 
-### Figure out how to test, fix if needed and publish the extension for Chrome
+https://developer.chrome.com/docs/webstore/publish
 
-Maybe the path to `index.css` will need to be adjusted.
+### Publish the extension for Edge
 
-### Set up Puppeteer to test and screenshot the extension in GitHub Actions
+https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/publish-extension
 
-https://github.com/puppeteer/puppeteer/issues/1286
+### Run the Puppeteer script in GitHub Actions and push `screenshot.png` from it

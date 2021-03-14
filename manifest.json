@@ -4,12 +4,12 @@
   "version": "1.0",
   "description": "Displays a 80 and 120 character stop in the GitHub web editor",
   "icons": {
-    "48": "icon-48.png",
-    "96": "icon-96.png"
+    "48": "48.png",
+    "96": "96.png"
   },
   "background": {
     "scripts": [
-      "index.js"
+      "background.js"
     ]
   },
   "permissions": [
