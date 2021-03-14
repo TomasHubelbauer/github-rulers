@@ -7,14 +7,12 @@
     "48": "icon-48.png",
     "96": "icon-96.png"
   },
-  "content_scripts": [
-    {
-      "matches": [
-        "*://*.github.com/*"
-      ],
-      "js": [
-        "index.js"
-      ]
-    }
+  "background": {
+    "scripts": [
+      "index.js"
+    ]
+  },
+  "permissions": [
+    "*://*.github.com/*"
   ]
 }
