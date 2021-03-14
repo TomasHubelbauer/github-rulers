@@ -1,4 +1,4 @@
-# GitHub 80 Characters
+# GitHub 80/120 Characters
 
 To make the GitHub code editor display an 80 and 120 character cutoff areas, use
 this stylesheet:
