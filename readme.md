@@ -3,12 +3,12 @@
 To make the GitHub code editor display an 80 and 120 character cutoff lines, use
 the stylesheet in [`background.css`](background.css).
 
-![](screenshot.png)
-
 ```
  123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789
                                                                  80 characters ^                        120 characters ^
 ```
+
+![](screenshot.png)
 
 ## Installation & Usage
 
