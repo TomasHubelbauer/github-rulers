@@ -16,6 +16,10 @@ the 80 and 120 character stops in the GitHub code editor.
 
 [Browser Extension](https://addons.mozilla.org/en-US/firefox/addon/github-80-120-characters)
 
+### Chrome
+
+[Browser Extension](https://chrome.google.com/webstore/detail/github-80120-characters/lkipjkpbpmlgdbbhplgbbngadibgaalf)
+
 ### User Stylesheet: Stylus
 
 Use the [Stylus](https://github.com/openstyles/stylus) extension with the
@@ -105,11 +109,6 @@ and also at using Playwright for Edge testing in the future.
 [More information](https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/publish-extension)
 
 ## To-Do
-
-### Wait for Chrome extension review and test it out
-
-The Google reviewer should email me once their review is complete. I'll need to
-set the extension URL in the publishing section for Chrome afterwards.
 
 ### Wait for Edge extension review and test it out
 
