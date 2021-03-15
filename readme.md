@@ -14,7 +14,7 @@ the 80 and 120 character stops in the GitHub code editor.
 
 ### Firefox
 
-[Browser Extension](#firefox)
+[Browser Extension](https://addons.mozilla.org/en-US/firefox/addon/github-80-120-characters)
 
 ### User Stylesheet: Stylus
 
@@ -27,24 +27,27 @@ something browsers do in a user-friendly way anymore:
 - [Chromium](https://src.chromium.org/viewvc/chrome?revision=234007&view=revision)
 - [Firefox](https://superuser.com/a/319322/490452)
 
-## Packaging
+## Development
+
+### Packaging
+
+Prior to publishing the extension, an archive package must be made to upload to
+whichever browser extension store is being published to. To generate it, run:
 
 ```sh
 zip extension.zip manifest.json background.js background.css 48.png 96.png
 ```
 
-## Firefox
+### Firefox
 
-[Browser Extension](https://addons.mozilla.org/en-US/firefox/addon/github-80-120-characters)
-
-### Testing
+#### Testing
 
 - Go to `about:debugging#/runtime/this-firefox`
 - Click **Load Temporary Add-On** and select `manifest.json`
 - Click **Reload** after making changes
 - Click **Inspect** to view the extension console
 
-### Publishing
+#### Publishing
 
 - [Package the extension](#packaging)
 - Go to https://addons.mozilla.org/developers
@@ -52,9 +55,9 @@ zip extension.zip manifest.json background.js background.css 48.png 96.png
 
 [More information](https://extensionworkshop.com/documentation/publish/submitting-an-add-on)
 
-## Chrome
+### Chrome
 
-### Testing
+#### Testing
 
 The Chrome extension is being developed and tested using Puppeteer.
 
@@ -75,7 +78,7 @@ To use Chrome directly and not through Puppeteer:
 - Click the reload icon after making changes
 - Click **Details** > `background page` to view the extension console
 
-### Publishing
+#### Publishing
 
 - [Package the extension](#packaging)
 - Go to https://chrome.google.com/webstore/devconsole
@@ -84,15 +87,15 @@ To use Chrome directly and not through Puppeteer:
 
 [More information](https://developer.chrome.com/docs/webstore/publish)
 
-## Edge
+### Edge
 
-### Testing
+#### Testing
 
 Testing is done the same way as for [Chrome](#chrome) using Puppeteer. To test
 in Edge proper, I don't have the instructions yet. I might look at adding them
 and also at using Playwright for Edge testing in the future.
 
-### Publishing
+#### Publishing
 
 - [Package the extension](#packaging)
 - Go to https://partner.microsoft.com/dashboard/microsoftedge
