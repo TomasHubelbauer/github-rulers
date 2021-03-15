@@ -1,7 +1,7 @@
 # GitHub 80/120 Characters
 
-To make the GitHub code editor display an 80 and 120 character cutoff lines, use
-the stylesheet in [`background.css`](background.css).
+This extension and stylesheet can be used to display vertical lines indicating
+the 80 and 120 character stops in the GitHub code editor.
 
 ```
  123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789
@@ -12,55 +12,49 @@ the stylesheet in [`background.css`](background.css).
 
 ## Installation & Usage
 
-You can use the [Stylus](https://github.com/openstyles/stylus) extension to use
-the stylesheet. I am building my own extension, but it is still in development.
-To use it, see [Browser Extension](#browser-extension).
+### Firefox
 
-See about [User Stylesheet Support In Browsers](#user-stylesheets-in-browsers)
-for why to use the extension.
+[Browser Extension](#firefox)
 
-## User Stylesheets In Browsers
+### User Stylesheet: Stylus
 
-Unfortunately, user stylesheets as a browser feature are not really something
-browsers do in a user-friendly way anymore:
+Use the [Stylus](https://github.com/openstyles/stylus) extension with the
+[`background.css`](background.css) stylesheet.
 
-- [Chrome/Edge](https://src.chromium.org/viewvc/chrome?revision=234007&view=revision)
+Unfortunately, user stylesheets as a native browser feature are not really
+something browsers do in a user-friendly way anymore:
+
+- [Chromium](https://src.chromium.org/viewvc/chrome?revision=234007&view=revision)
 - [Firefox](https://superuser.com/a/319322/490452)
 
-## Browser Extension
-
-I am working on developing a browser extension specifically for this so that
-people are not forced to give an extension full access to all their tabs.
-
-The extension will support Firefox and Chrome.
-
-### Packaging
+## Packaging
 
 ```sh
 zip extension.zip manifest.json background.js background.css 48.png 96.png
 ```
 
-### Firefox
+## Firefox
 
-#### Testing
+[Browser Extension](https://addons.mozilla.org/en-US/firefox/addon/github-80-120-characters)
+
+### Testing
 
 - Go to `about:debugging#/runtime/this-firefox`
 - Click **Load Temporary Add-On** and select `manifest.json`
 - Click **Reload** after making changes
 - Click **Inspect** to view the extension console
 
-#### Publishing
+### Publishing
 
 - [Package the extension](#packaging)
 - Go to https://addons.mozilla.org/developers
 - Go through the wizard with the `extension.zip` archive
-- Check out https://addons.mozilla.org/en-US/firefox/addon/github-80-120-characters
 
 [More information](https://extensionworkshop.com/documentation/publish/submitting-an-add-on)
 
-### Chrome
+## Chrome
 
-#### Testing
+### Testing
 
 The Chrome extension is being developed and tested using Puppeteer.
 
@@ -81,7 +75,7 @@ To use Chrome directly and not through Puppeteer:
 - Click the reload icon after making changes
 - Click **Details** > `background page` to view the extension console
 
-#### Publishing
+### Publishing
 
 - [Package the extension](#packaging)
 - Go to https://chrome.google.com/webstore/devconsole
@@ -90,15 +84,15 @@ To use Chrome directly and not through Puppeteer:
 
 [More information](https://developer.chrome.com/docs/webstore/publish)
 
-### Edge
+## Edge
 
-#### Testing
+### Testing
 
 Testing is done the same way as for [Chrome](#chrome) using Puppeteer. To test
 in Edge proper, I don't have the instructions yet. I might look at adding them
 and also at using Playwright for Edge testing in the future.
 
-#### Publishing
+### Publishing
 
 - [Package the extension](#packaging)
 - Go to https://partner.microsoft.com/dashboard/microsoftedge
@@ -108,10 +102,6 @@ and also at using Playwright for Edge testing in the future.
 [More information](https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/publish-extension)
 
 ## To-Do
-
-### Wait for Firefox extension review and test it out
-
-The AMO reviewer should email me once their review is complete.
 
 ### Wait for Chrome extension review and test it out
 
