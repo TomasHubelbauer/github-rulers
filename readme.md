@@ -34,6 +34,12 @@ people are not forced to give an extension full access to all their tabs.
 
 The extension will support Firefox and Chrome.
 
+### Packaging
+
+```sh
+zip extension.zip manifest.json background.js background.css 48.png 96.png
+```
+
 ### Firefox
 
 #### Testing
@@ -45,19 +51,16 @@ The extension will support Firefox and Chrome.
 
 #### Publishing
 
-- Zip this repository directory:
-
-```sh
-zip firefox.zip manifest.json background.js background.css 48.png 96.png
-```
-
+- [Package the extension](#packaging)
 - Go to https://addons.mozilla.org/developers
-- Go through the wizard with the `firefox.zip` archive
+- Go through the wizard with the `extension.zip` archive
 - Check out https://addons.mozilla.org/en-US/firefox/addon/github-80-120-characters
 
 [More information](https://extensionworkshop.com/documentation/publish/submitting-an-add-on)
 
 ### Chrome
+
+#### Testing
 
 The Chrome extension is being developed and tested using Puppeteer.
 
@@ -78,15 +81,25 @@ To use Chrome directly and not through Puppeteer:
 - Click the reload icon after making changes
 - Click **Details** > `background page` to view the extension console
 
+#### Publishing
+
+- [Package the extension](#packaging)
+- Go to https://chrome.google.com/webstore/devconsole
+- Go through the wizard with the `extension.zip` archive
+- Wait for the extension review to complete and store URL to get assigned
+
+[More information](https://developer.chrome.com/docs/webstore/publish)
+
 ## To-Do
 
 ### Wait for Firefox extension review and test it out
 
 The AMO reviewer should email me once their review is complete.
 
-### Publish the extension for Chrome and Edge
+### Wait for Chrome extension review and test it out
 
-https://developer.chrome.com/docs/webstore/publish
+The Google reviewer should email me once their review is complete. I'll need to
+set the extension URL in the publishing section for Chrome afterwards.
 
 ### Publish the extension for Edge
 
