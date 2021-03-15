@@ -90,6 +90,23 @@ To use Chrome directly and not through Puppeteer:
 
 [More information](https://developer.chrome.com/docs/webstore/publish)
 
+### Edge
+
+#### Testing
+
+Testing is done the same way as for [Chrome](#chrome) using Puppeteer. To test
+in Edge proper, I don't have the instructions yet. I might look at adding them
+and also at using Playwright for Edge testing in the future.
+
+#### Publishing
+
+- [Package the extension](#packaging)
+- Go to https://partner.microsoft.com/dashboard/microsoftedge
+- Go through the wizard with the `extension.zip` archive
+- Wait for the extension review to complete and store URL to get assigned
+
+[More information](https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/publish-extension)
+
 ## To-Do
 
 ### Wait for Firefox extension review and test it out
@@ -101,8 +118,12 @@ The AMO reviewer should email me once their review is complete.
 The Google reviewer should email me once their review is complete. I'll need to
 set the extension URL in the publishing section for Chrome afterwards.
 
-### Publish the extension for Edge
+### Wait for Edge extension review and test it out
 
-https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/publish-extension
+The Microsoft reviewer should email me once their review is complete. I'll need
+to set the extension URL in the publishing section for Edge afterwards.
 
 ### Run the Puppeteer script in GitHub Actions and push `screenshot.png` from it
+
+Might also want to generate a 800x640 screenshots for the stores. JPG for the
+Chrome one and PNG for the Edge one. Not sure about AMO.
