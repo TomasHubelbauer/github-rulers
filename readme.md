@@ -20,6 +20,10 @@ the 80 and 120 character stops in the GitHub code editor.
 
 [Browser Extension](https://chrome.google.com/webstore/detail/github-80120-characters/lkipjkpbpmlgdbbhplgbbngadibgaalf)
 
+### Edge
+
+Please, use the Chrome extension while the Edge extension is in review.
+
 ### User Stylesheet: Stylus
 
 Use the [Stylus](https://github.com/openstyles/stylus) extension with the
