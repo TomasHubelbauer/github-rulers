@@ -127,3 +127,12 @@ to set the extension URL in the publishing section for Edge afterwards.
 
 Might also want to generate a 800x640 screenshots for the stores. JPG for the
 Chrome one and PNG for the Edge one. Not sure about AMO.
+
+### Set up GitHub Pages with links to the extension stores to use as a repo URL
+
+Set the GitHub Pages site as a repo URL on GitHub.
+
+### Cut GitHub Releases after each version change with links to the stores
+
+Manually cut a release after each store update and include links to the stores
+in the release description.
