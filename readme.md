@@ -36,10 +36,26 @@ The extension will support Firefox and Chrome.
 
 ### Firefox
 
+#### Testing
+
 - Go to `about:debugging#/runtime/this-firefox`
 - Click **Load Temporary Add-On** and select `manifest.json`
 - Click **Reload** after making changes
 - Click **Inspect** to view the extension console
+
+#### Publishing
+
+- Zip this repository directory:
+
+```sh
+zip firefox.zip manifest.json background.js background.css 48.png 96.png
+```
+
+- Go to https://addons.mozilla.org/developers
+- Go through the wizard with the `firefox.zip` archive
+- Check out https://addons.mozilla.org/en-US/firefox/addon/github-80-120-characters
+
+[More information](https://extensionworkshop.com/documentation/publish/submitting-an-add-on)
 
 ### Chrome
 
@@ -64,9 +80,9 @@ To use Chrome directly and not through Puppeteer:
 
 ## To-Do
 
-### Publish the extension for Firefox
+### Wait for Firefox extension review and test it out
 
-https://extensionworkshop.com/documentation/publish/submitting-an-add-on
+The AMO reviewer should email me once their review is complete.
 
 ### Publish the extension for Chrome and Edge
 
