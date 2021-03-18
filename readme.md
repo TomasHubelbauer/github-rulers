@@ -12,28 +12,13 @@ the 80 and 120 character stops in the GitHub code editor.
 
 ## Installation & Usage
 
-### Firefox
+- [Firefox extension](https://addons.mozilla.org/firefox/addon/github-80-120-characters)
+- [Chrome extension](https://chrome.google.com/webstore/detail/github-80120-characters/lkipjkpbpmlgdbbhplgbbngadibgaalf)
+- [Edge extension](https://microsoftedge.microsoft.com/addons/detail/foggcbbpoogpcpgjpdeloomklnmpglpj)
+- [Stylesheet](background.css)
 
-[Browser Extension](https://addons.mozilla.org/en-US/firefox/addon/github-80-120-characters)
-
-### Chrome
-
-[Browser Extension](https://chrome.google.com/webstore/detail/github-80120-characters/lkipjkpbpmlgdbbhplgbbngadibgaalf)
-
-### Edge
-
-Please, use the Chrome extension while the Edge extension is in review.
-
-### User Stylesheet: Stylus
-
-Use the [Stylus](https://github.com/openstyles/stylus) extension with the
-[`background.css`](background.css) stylesheet.
-
-Unfortunately, user stylesheets as a native browser feature are not really
-something browsers do in a user-friendly way anymore:
-
-- [Chromium](https://src.chromium.org/viewvc/chrome?revision=234007&view=revision)
-- [Firefox](https://superuser.com/a/319322/490452)
+Visiting the edit mode of any file on GitHub will activate the extension and add
+the vertical lines for 80 and 120 characters.
 
 ## Development
 
@@ -43,7 +28,8 @@ something browsers do in a user-friendly way anymore:
 - Click **Load Temporary Add-On** and select `manifest.json`
 - Click **Reload** after making changes
 - Click **Inspect** to view the extension console
-- [Package](#packaging) and deploy on https://addons.mozilla.org/developers
+
+[Package](#packaging) and deploy to: https://addons.mozilla.org/developers
 
 ### Chrome
 
@@ -65,7 +51,8 @@ To use Chrome directly and not through Puppeteer:
 - Click **Load unpacked** and select this repository directory
 - Click the reload icon after making changes
 - Click **Details** > `background page` to view the extension console
-- [Package](#packaging) and deploy on https://chrome.google.com/webstore/devconsole
+
+[Package](#packaging) and deploy to: https://chrome.google.com/webstore/devconsole
 
 ### Edge
 
@@ -73,7 +60,7 @@ Testing is done the same way as for [Chrome](#chrome) using Puppeteer. To test
 in Edge proper, I don't have the instructions yet. I might look at adding them
 and also at using Playwright for Edge testing in the future.
 
-- [Package](#packaging) and deploy on https://partner.microsoft.com/dashboard/microsoftedge
+[Package](#packaging) and deploy to: https://partner.microsoft.com/dashboard/microsoftedge
 
 ### Packaging
 
@@ -86,10 +73,6 @@ zip extension.zip manifest.json background.js background.css 48.png 96.png
 
 ## To-Do
 
-### Wait for Edge extension review, test it out and add a link to it
-
-The Microsoft reviewer should email me once their review is complete.
-
 ### Run the Puppeteer script in GitHub Actions and push `screenshot.png` from it
 
 Might also want to generate a 800x640 screenshots for the stores. JPG for the
@@ -97,7 +80,8 @@ Chrome one and PNG for the Edge one. Not sure about AMO.
 
 ### Set up GitHub Pages with links to the extension stores to use as a repo URL
 
-Set the GitHub Pages site as a repo URL on GitHub.
+Set the GitHub Pages site as a repo URL on GitHub. Update the extension home
+page link to the GitHub Pages site once done.
 
 ### Cut GitHub Releases after each version change with links to the stores
 
