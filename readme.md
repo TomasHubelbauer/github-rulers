@@ -87,3 +87,12 @@ page link to the GitHub Pages site once done.
 
 Manually cut a release after each store update and include links to the stores
 in the release description.
+
+### Rename the repository and the extensions to GitHub Rulers
+
+Leave the 80 and 120 character keywords in the description for SEO but change
+the name.
+
+### Generate the store and readme images using Puppeteer in GitHub Actions
+
+Or PlayWright…
