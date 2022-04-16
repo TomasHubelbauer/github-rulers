@@ -22,6 +22,11 @@ the vertical lines for 80 and 120 characters.
 
 ## Development
 
+There is a GitHub Actions workflow associated with the repository that runs on
+every push and refreshes `screenshot.png` by running the extension in Playwright
+Chrome, signing in as a test user (see Secrets), navigating to the README editor
+of this repository and capturing a screenshot of the editor.
+
 ### Firefox
 
 - Go to `about:debugging#/runtime/this-firefox`
@@ -73,13 +78,9 @@ zip extension.zip manifest.json background.js background.css 48.png 96.png
 
 ## To-Do
 
-### Run the Playwright script in GitHub Actions and push `screenshot.png` back
+### Generate 800x640 image for the extension stores in GitHub Actions, too
 
-I have added GitHub Actions secrets `GITHUBCOM_EMAIL` and `GITHUBCOM_PASSWORD`
-for the test user sign in.
-
-Might also want to generate a 800x640 screenshots for the stores. JPG for the
-Chrome one and PNG for the Edge one. Not sure about AMO.
+JPG for the Chrome. PNG for the Edge. Note sure about Firefox.
 
 ### Set up GitHub Pages with links to the extension stores to use as a repo URL
 
