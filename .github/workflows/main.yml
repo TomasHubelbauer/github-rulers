@@ -1,0 +1,18 @@
+name: main
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+  - cron: "0 0 * * 0"
+
+job:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out the workflow script
+      run: actions/checkout@main
+    - name: Run the Playwright script to capture the screenshot
+      run: |
+        cd .github/workflows
+        npm install
+        node . ${{secrets.GITHUBCOM_EMAIL}} ${{secrets.GITHUBCOM_PASSWORD}} ${{secrets.GITHUBCOM_SECRET}}

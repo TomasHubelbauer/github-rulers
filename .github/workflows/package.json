@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "node-2fa": "^2.0.3",
+    "playwright": "^1.21.0"
+  }
+}
