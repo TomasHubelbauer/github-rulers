@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check out the workflow script
-      run: actions/checkout@main
+      uses: actions/checkout@main
     - name: Run the Playwright script to capture the screenshot
       run: |
         cd .github/workflows
