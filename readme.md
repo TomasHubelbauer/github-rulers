@@ -73,7 +73,10 @@ zip extension.zip manifest.json background.js background.css 48.png 96.png
 
 ## To-Do
 
-### Run the Puppeteer script in GitHub Actions and push `screenshot.png` from it
+### Run the Playwright script in GitHub Actions and push `screenshot.png` back
+
+I have added GitHub Actions secrets `GITHUBCOM_EMAIL` and `GITHUBCOM_PASSWORD`
+for the test user sign in.
 
 Might also want to generate a 800x640 screenshots for the stores. JPG for the
 Chrome one and PNG for the Edge one. Not sure about AMO.
@@ -92,7 +95,3 @@ in the release description.
 
 Leave the 80 and 120 character keywords in the description for SEO but change
 the name.
-
-### Generate the store and readme images using Puppeteer in GitHub Actions
-
-Or PlayWright…
