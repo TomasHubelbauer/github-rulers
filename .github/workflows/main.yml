@@ -17,3 +17,9 @@ jobs:
         npm install
         npx playwright install-deps chromium
         xvfb-run node . ${{secrets.GITHUBCOM_EMAIL}} ${{secrets.GITHUBCOM_PASSWORD}} ${{secrets.GITHUBCOM_SECRET}}
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+        git add screenshot.png
+        git commit -m "Capture the screenshot" -m "This commit was created using GitHub Actions."
+        git pull --rebase
+        git push
