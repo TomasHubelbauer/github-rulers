@@ -15,4 +15,5 @@ jobs:
       run: |
         cd .github/workflows
         npm install
+        npx playwright install-deps chromium
         node . ${{secrets.GITHUBCOM_EMAIL}} ${{secrets.GITHUBCOM_PASSWORD}} ${{secrets.GITHUBCOM_SECRET}}
