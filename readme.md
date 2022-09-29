@@ -4,7 +4,7 @@ This extension and stylesheet can be used to display vertical lines indicating
 the 0, 80 and 120 character stops in the GitHub code editor.
 
 ```
- 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789
+0123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789
 ^ 0 characters                                                   80 characters ^                        120 characters ^
 ```
 
