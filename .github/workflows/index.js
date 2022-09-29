@@ -1,6 +1,6 @@
-import playwright from 'playwright';
-import node2fa from 'node-2fa';
 import fs from 'fs';
+import node2fa from 'node-2fa';
+import playwright from 'playwright';
 
 const email = process.argv[2] ?? await import('./email.js').then(module => module.default);
 if (!email) {
@@ -29,7 +29,7 @@ await page.type('#password', password);
 await page.click('input[type="submit"]');
 
 const { token } = node2fa.generateToken(secret);
-await page.type('#otp', token);
+await page.type('#totp', token);
 
 await page.goto('https://github.com/TomasHubelbauer/github-80-120-characters/edit/main/readme.md');
 await page.locator('.file').screenshot({ path: '../../screenshot.png' });
