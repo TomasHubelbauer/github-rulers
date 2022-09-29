@@ -102,5 +102,10 @@ the name.
 - [x] GitHub repository description
 - [x] Firefox extension
 - [ ] Chrome extension (in review)
-- [ ] Edge extension
+- [ ] Edge extension (blocked - needs v3 with `background.service_worker`)
 - [ ] GitHub workflow URLs
+
+### Convert to manifest version 2 with `background.service_worker`
+
+Firefox and Chrome still support manifest v2 but the Edge store won't let me
+upload it and wants me to use manifest v3.
