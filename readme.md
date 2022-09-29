@@ -12,7 +12,7 @@ the 0, 80 and 120 character stops in the GitHub code editor.
 
 ## Installation & Usage
 
-- [Firefox extension](https://addons.mozilla.org/firefox/addon/github-80-120-characters)
+- [Firefox extension](https://addons.mozilla.org/addon/github-rulers)
 - [Chrome extension](https://chrome.google.com/webstore/detail/github-80120-characters/lkipjkpbpmlgdbbhplgbbngadibgaalf)
 - [Edge extension](https://microsoftedge.microsoft.com/addons/detail/foggcbbpoogpcpgjpdeloomklnmpglpj)
 - [Stylesheet](background.css)
@@ -97,7 +97,10 @@ in the release description.
 Leave the 80 and 120 character keywords in the description for SEO but change
 the name.
 
-- The GitHub repository name and description
-- Firefox extension
-- Chrome extension
-- Edge extension
+- [ ] Extension name
+- [x] GitHub repository name
+- [x] GitHub repository description
+- [x] Firefox extension
+- [ ] Chrome extension
+- [ ] Edge extension
+- [ ] GitHub workflow URLs
