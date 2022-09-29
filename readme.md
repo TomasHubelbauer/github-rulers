@@ -101,6 +101,6 @@ the name.
 - [x] GitHub repository name
 - [x] GitHub repository description
 - [x] Firefox extension
-- [ ] Chrome extension
+- [ ] Chrome extension (in review)
 - [ ] Edge extension
 - [ ] GitHub workflow URLs
