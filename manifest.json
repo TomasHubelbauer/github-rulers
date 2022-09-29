@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "GitHub Rulers",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Displays 0, 80 & 120 character stop in the GitHub web editor",
   "icons": {
     "48": "48.png",
