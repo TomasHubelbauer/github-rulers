@@ -1,11 +1,11 @@
-# GitHub 80/120 Characters
+# GitHub Rulers
 
 This extension and stylesheet can be used to display vertical lines indicating
-the 80 and 120 character stops in the GitHub code editor.
+the 0, 80 and 120 character stops in the GitHub code editor.
 
 ```
  123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789
-                                                                 80 characters ^                        120 characters ^
+^ 0 characters                                                   80 characters ^                        120 characters ^
 ```
 
 ![](screenshot.png)
@@ -18,7 +18,7 @@ the 80 and 120 character stops in the GitHub code editor.
 - [Stylesheet](background.css)
 
 Visiting the edit mode of any file on GitHub will activate the extension and add
-the vertical lines for 80 and 120 characters.
+the vertical lines for 0, 80 and 120 characters.
 
 ## Development
 
@@ -96,3 +96,8 @@ in the release description.
 
 Leave the 80 and 120 character keywords in the description for SEO but change
 the name.
+
+- The GitHub repository name and description
+- Firefox extension
+- Chrome extension
+- Edge extension
