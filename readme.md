@@ -109,3 +109,16 @@ the name.
 
 Firefox and Chrome still support manifest v2 but the Edge store won't let me
 upload it and wants me to use manifest v3.
+
+### Re-upload the Firefox extension and figure out why it was removed
+
+The Firefox extension team removed the extension and would not follow up
+during the review so I did not have a chance to prevent this.
+
+Let's initiate another round of reviews and let's hope they are less useless
+this time around.
+
+### Drop extension build artifacts in the GitHub Actions artifacts
+
+In case Mozilla or any other browser vendor keep removing the extension I
+will have these to fall back on and install the extension from an archive.
