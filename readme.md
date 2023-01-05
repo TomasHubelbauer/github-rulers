@@ -78,6 +78,13 @@ zip extension.zip manifest.json background.js background.css 48.png 96.png
 
 ## To-Do
 
+### Await re-upload to AMO
+
+Mozilla pulled the extension from AMO despite its meeting all of the stated
+requirements.
+I have bumped the version and re-uploaded the extension.
+The review is now ongoing.
+
 ### Generate 800x640 image for the extension stores in GitHub Actions, too
 
 JPG for the Chrome. PNG for the Edge. Note sure about Firefox.
