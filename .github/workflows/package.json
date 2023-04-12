@@ -2,6 +2,6 @@
   "type": "module",
   "dependencies": {
     "node-2fa": "^2.0.3",
-    "playwright": "^1.26.1"
+    "playwright": "^1.32.3"
   }
 }

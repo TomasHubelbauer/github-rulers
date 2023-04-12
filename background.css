@@ -1,16 +1,31 @@
-/* Hide the "Enter file contents here" placeholder */
+/* Hide the "Enter file contents here" placeholder shown in an empty editor */
+/* Note that it appears shifted relative to the text and crossed the 0 line */
+/* Note that it only appears with the Global Navigation preview feature on */
 .CodeMirror-placeholder {
   display: none;
 }
 
+/* Shift by 2 characters to account for GitHub CodeMirror editor padding */
+/* Start with the values for when the Global Navigation preview feature is on */
+:root {
+  --shift: 2;
+}
+
+/* Shift by 2 characters to account for GitHub CodeMirror editor padding */
+/* Reset to the values for when the Global Navigation preview feature is off */
+/* Note that .CodeMirror-wrap only appears in the DOM with this feature off */
+.CodeMirror-wrap {
+  --shift: .5;
+}
+
 .CodeMirror-lines {
-  /* Shift by 2 characters to account for GitHub CodeMirror editor padding */
-  --0: 2ch;
-  --80: 82ch;
-  --120: 122ch;
+  --0: calc(var(--shift) * 1ch + 0ch);
+  --80: calc(var(--shift) * 1ch + 80ch);
+  --120: calc(var(--shift) * 1ch + 120ch);
   --color: silver;
 
-  background: linear-gradient(to right,
+  /* Extract to a variable to be able to read using JavaScript in `test.html` */
+  --background: linear-gradient(to right,
       /* Render a line at 0 characters */
       transparent var(--0),
       var(--color) calc(var(--0) + 1px),
@@ -26,7 +41,8 @@
       var(--color) calc(var(--120) + 1px),
       transparent 0,
 
-      transparent)
-    /* Override GitHub's own stylesheet */
-    !important;
+      transparent);
+
+  /* Override GitHub's own stylesheet with the `!important` */
+  background: var(--background) !important;
 }

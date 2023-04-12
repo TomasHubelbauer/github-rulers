@@ -29,10 +29,11 @@ await page.type('#password', password);
 await page.click('input[type="submit"]');
 
 const { token } = node2fa.generateToken(secret);
-await page.type('#totp', token);
+await page.type('#app_totp', token);
 
 await page.goto('https://github.com/TomasHubelbauer/github-80-120-characters/edit/main/readme.md');
 await page.locator('.file').screenshot({ path: '../../screenshot.png' });
+await page.locator('.file').screenshot({ path: '../../screenshot.jpg' });
 await browser.close();
 
 await fs.promises.rm('user-data-dir', { recursive: true });

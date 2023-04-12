@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Test</title>
+    <link rel="stylesheet" href="background.css" />
+    <style>
+      /* Make the color pop more to make it easier to spot while debugging */
+      .CodeMirror-lines {
+        --color: red !important;
+        font-family: monospace;
+        white-space: pre;
+      }
+
+    </style>
+    <script type="module">
+      const element = document.querySelector('.CodeMirror-lines');
+      element.textContent = getComputedStyle(element).getPropertyValue('--background');
+    </script>
+  </head>
+  <body>
+    <!-- Toggle the .CodeMirror-wrap class (add/remove `x` somewhere in it) to test the conditional logic -->
+    <!-- Check the browser dev tools and see what CSS variable values are -->
+    <div class="CodeMirror-editor CodeMirror-wrap">
+      <div class="CodeMirror-lines">
+        TEST
+      </div>
+    </div>
+  </body>
+</html>

@@ -27,6 +27,15 @@ every push and refreshes `screenshot.png` by running the extension in Playwright
 Chrome, signing in as a test user (see Secrets), navigating to the README editor
 of this repository and capturing a screenshot of the editor.
 
+### "Global Navigator" Preview Feature
+
+GitHub has a preview feature called *Global Navigation* which when on changes
+the spacing in the CodeMirror editor.
+The CSS of this extension detects the feature and adjusts the values if needed.
+
+`test.html` can be used to check that the CSS variable computations work as
+expected.
+
 ### Firefox
 
 - Go to `about:debugging#/runtime/this-firefox`
@@ -68,6 +77,10 @@ and also at using Playwright for Edge testing in the future.
 [Package](#packaging) and deploy to: https://partner.microsoft.com/dashboard/microsoftedge
 
 ### Packaging
+
+Regenerate `screenshot.png` and `screenshot.jpg` prior to publishing by going to
+`.github/workflows` and running `npm install` to install Playwright and Node-2FA
+and then `node . email password secret`.
 
 Prior to publishing the extension, an archive package must be made to upload to
 whichever browser extension store is being published to. To generate it, run:
