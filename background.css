@@ -1,31 +1,32 @@
+/* Hide the "Enter file contents here" placeholder */
+.CodeMirror-placeholder {
+  display: none;
+}
+
 .CodeMirror-lines {
-  /* Adjust by half a character to account for GitHub spacing */
-  --0: .5ch;
-  --80: 80.5ch;
-  --120: 120.5ch;
+  /* Shift by 2 characters to account for GitHub CodeMirror editor padding */
+  --0: 2ch;
+  --80: 82ch;
+  --120: 122ch;
   --color: silver;
 
-  background: linear-gradient(
-    to right,
+  background: linear-gradient(to right,
+      /* Render a line at 0 characters */
+      transparent var(--0),
+      var(--color) calc(var(--0) + 1px),
+      transparent 0,
 
-    /* Render a line at 0 characters */
-    transparent var(--0),
-    var(--color) calc(var(--0) + 1px),
-    transparent 0,
+      /* Render a line at 80 characters */
+      transparent var(--80),
+      var(--color) calc(var(--80) + 1px),
+      transparent 0,
 
-    /* Render a line at 80 characters */
-    transparent var(--80),
-    var(--color) calc(var(--80) + 1px),
-    transparent 0,
+      /* Render a line at 120 characters */
+      transparent var(--120),
+      var(--color) calc(var(--120) + 1px),
+      transparent 0,
 
-    /* Render a line at 120 characters */
-    transparent var(--120),
-    var(--color) calc(var(--120) + 1px),
-    transparent 0,
-    
-    transparent
-  )
-
-  /* Override GitHub's own stylesheet */
-  !important;
+      transparent)
+    /* Override GitHub's own stylesheet */
+    !important;
 }
