@@ -43,7 +43,8 @@ expected.
 - Click **Reload** after making changes
 - Click **Inspect** to view the extension console
 
-[Package](#packaging) and deploy to: https://addons.mozilla.org/developers
+[Package](#packaging) and deploy to the Mozilla Add-On Store (AMO) at
+https://addons.mozilla.org/developers
 
 ### Chrome
 
